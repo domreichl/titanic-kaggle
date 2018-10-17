@@ -23,7 +23,7 @@ def preprocess(df):
     df['Title'] = df['Title'].replace(['Mlle', 'Ms'], 'Miss')
     df['Title'] = df['Title'].replace('Mme', 'Mrs')
 
-    # fill-in missing values (using mean of 'print(df['Age'].groupby(df['Title']).median())' for Age)
+    # fill in missing values
     df['Embarked'] = df['Embarked'].fillna('S')
     df['Fare'] = df['Fare'].fillna(df['Fare'].median())
     df['Age'] = df['Age'].fillna(value=-1)
