@@ -1,0 +1,6 @@
+# titanic-kaggle
+This repository contains the final code for my first kaggle competition:
+- Goal: predict which passengers survived the sinking of the RMS Titanic
+- Method: c-support vector classification
+- Score: 0.80861 (top 8% in leaderboard)
+- Third-party modules: pandas, numpy, sklearn
