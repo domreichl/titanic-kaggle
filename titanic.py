@@ -4,7 +4,7 @@ Author: Dominic Reichl, @domreichl
 Title: Titanic (my first kaggle competition)
 Goal: Predict which passengers survived the sinking of the RMS Titanic
 Method: C-support vector classification
-Kaggle score: 0.80861 -> top 8% in leaderboard
+Kaggle Score: 0.80861 -> top 8% in leaderboard
 '''
 
 import numpy as np
