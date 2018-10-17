@@ -7,8 +7,8 @@ Method: C-support vector classification
 Kaggle Score: 0.80861 -> top 8% in leaderboard
 '''
 
-import numpy as np
 import pandas as pd
+from numpy import array
 from sklearn.svm import SVC
 
 def preprocess(df):
@@ -58,9 +58,9 @@ test  = preprocess(pd.read_csv('test.csv'))
 
 # create arrays with important features
 features = ['Pclass', 'Solo', 'Title', 'Embarked', 'Sex', 'Fare', 'Age']
-X = np.array(train[features])
-y = np.array(train['Survived'])
-X_test = np.array(test[features])
+X = array(train[features])
+y = array(train['Survived'])
+X_test = array(test[features])
 
 # build and fit support vector machine
 model = SVC()
