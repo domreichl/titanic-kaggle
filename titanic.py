@@ -25,7 +25,7 @@ def preprocess(df):
 
     # fill in missing values
     df['Embarked'] = df['Embarked'].fillna('S')
-    df['Fare'] = df['Fare'].fillna(df['Fare'].median())
+    df['Fare'] = df['Fare'].fillna(df['Fare'].median()) # df['Fare'].median() is equal in train and test set
     df['Age'] = df['Age'].fillna(value=-1)
     df.loc[(df['Age'] == -1) &(df['Title'] == 'Master'), 'Age'] = 5.25
     df.loc[(df['Age'] == -1) &(df['Title'] == 'Miss'), 'Age'] = 21.5
